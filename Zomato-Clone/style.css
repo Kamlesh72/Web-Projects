@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-section {
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+}
+
+.nav-bar {
+    color: white;
+    display: flex;
+}
+
+#nav-items {
+    display: flex;
+}
+
+#nav-items a {
+    text-decoration: none;
+}
