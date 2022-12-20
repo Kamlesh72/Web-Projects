@@ -1,24 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .top-section {
     background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
     width: 100vw;
     height: 500px;
-    background-size: cover;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .nav-bar {
-    color: white;
     display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: fit-content;
+    margin-top: 7px;
 }
 
-#nav-items {
-    display: flex;
+#nav-items li{
+    display: inline-block;
+    margin-left: 18px;
 }
 
 #nav-items a {
     text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.top-middle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.top-middle div {
+    margin-bottom: 20px;
+}
+
+.title-zomato {
+    background-image: url(https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png);
+    background-size: 100%;
+    width: 280px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+
+.headline-zomato {
+    font-size: 35px;
+}
+
+.search-field {
+    background-color: white;
+    width: 700px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.search-field select {
+    width: 20%;
+    border: 0px;
+    font-size: 15px;
+    color: gray;
+    outline-width: 0px;
+}
+
+.search-field input {
+    width: 80%;
+    border: 0px;
+    outline-width: 0px;
+}
+
+#map {
+    margin-right: 10px;
+    margin-left: 5px;
+    color: lightcoral;
 }
